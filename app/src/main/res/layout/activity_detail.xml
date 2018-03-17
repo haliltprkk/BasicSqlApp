@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/product_name_detail_text_view"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="Product Name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price_detail_text_view"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/supplier_edit_layout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Price"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/supplier_edit_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:fontFamily="sans-serif-light">
+
+        <TextView
+            android:id="@+id/supplier_information_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Supplier Information"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/supplier_name_detail_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/supplier_information_text_view"
+            android:layout_margin="5dp"
+            android:ellipsize="marquee"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:text="Supplier Name" />
+
+        <TextView
+            android:id="@+id/supplier_email_detail_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/supplier_name_detail_text_view"
+            android:layout_margin="5dp"
+            android:ellipsize="marquee"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:text="Supplier Email" />
+
+        <TextView
+            android:id="@+id/supplier_phone_number_detail_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/supplier_email_detail_text_view"
+            android:layout_margin="5dp"
+            android:ellipsize="marquee"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:text="Supplier Phone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/supplier_edit_layout"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/inrease_detail_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/classic_button_shape"
+            android:text="+"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <EditText
+
+            android:id="@+id/quantity_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/inrease_detail_button"
+            android:fontFamily="sans-serif-light"
+            android:inputType="number"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/decrease_detail_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/quantity_edit_text"
+            android:background="@drawable/classic_button_shape"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/delete_detail_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/delete_button_shape"
+            android:text="delete"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/call_detail_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/delete_detail_button"
+            android:background="@drawable/classic_button_shape"
+            android:text="Call"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/edit_detail_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/call_detail_button"
+            android:background="@drawable/classic_button_shape"
+            android:text="EDIT"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
